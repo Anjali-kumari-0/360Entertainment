@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>365 Entertainment</title>
+        <script src="https://kit.fontawesome.com/e1b283836e.js" crossorigin="anonymous"></script>
+        <style>
+            * {
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+                font-family: 'poopins',sans-serif;
+            }
+            body {
+                margin: 0px;
+                padding:0px;
+                background-color:rgb(19, 18, 18);
+                color: white;
+
+            }
+            
+            nav {
+                background-color: black;
+                
+               
+            }
+            nav:after {
+                content:'';
+                clear: both;
+                display: table;
+            }
+            nav .logo {
+                float: left;
+                color: white;
+                font-size: 27px;
+                font-weight: 600;
+                line-height: 70px;
+                padding-left: 60px;
+                padding-top: 0px;
+                
+            }
+            nav ul {
+                float: right;
+                list-style: none;
+                margin-right:40px;
+                position: relative;
+            }
+            nav ul li {
+                
+                display: inline-block;
+                background: black;
+                margin: 0 5px;
+
+            }
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                line-height: 70px;
+                font-size: 18px;
+                padding: 8px 15px;
+
+            }
+            nav ul li a:hover {
+                border-radius: 5px;
+                color: aqua;
+                box-shadow: 0 0 5px #33ffff ,
+                            0 0 5px #33ffff;
+            }
+            nav ul ul li a:hover {
+                color: aqua;
+                box-shadow: none;
+            }
+            nav ul ul li  {
+                position: relative;
+                margin: 1px;
+                width: 150px;
+                float: none;
+                display: list-item;
+                border-bottom:  solid aqua;
+                transition: 3s;
+            }
+            .aa {
+                font-size:90%;
+                font-style: oblique;
+                box-sizing: border-box;
+            }
+            
+            nav ul li:hover > ul {
+                opacity: 1;
+                visibility: visible;
+                top: 70px;
+
+            }
+            nav ul ul  {
+                position: absolute;
+                top: 90px;
+                border-top: 3px solid cyan;
+                opacity: 0;
+                visibility: hidden;
+                transition: top .3s;
+            }
+            .backhome {
+                height: 100vh;
+                width: 100%;
+                background-image:url(itl.cat_film-wallpaper_2898765.png);
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                
+                
+            }
+            .box1 {
+                width: 300px;
+                box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+                border-radius: 10px;
+                overflow: hidden;
+                height: 400px;
+                
+                
+                transform: translate(-50%,-50%);
+
+            }
+            
+
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.boxsearch {
+    width: 30%;
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+
+}
+.searchbar {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.search {
+    width: 100%;
+    border: 3px solid cyan;
+    padding: 5px;
+    height: 25px;
+    border-right: none;
+}
+.searchbtn {
+    width: 40px;
+    height: 25px;
+    border: 1px solid cyan;
+    background: cyan;
+    text-align: center;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 10px;
+}
+.search:focus {
+    color: black;
+    box-shadow: 0 0 5px cyan;
+}
+.trainding {
+    text-align: center;
+    text-decoration: solid cyan;
+    font-weight: 200;
+    font-size: 200%;
+    font-style: oblique;
+    color: cyan;
+    margin-top: 30px;
+    
+}
+hr {
+    color: aqua;
+}
+.allimgsec {
+    display: inline-flex;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+}
+
+.movie1 {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    margin-right: 100px;
+}
+.img1 {
+    height: 200px;
+    width: 150px;
+    margin-top: 10px;
+    padding: 10px;
+    margin-right: 100px;
+}
+.movies {
+    margin-bottom: 70px;
+}
+.img1:hover {
+    height: 250px;
+    width: 200px;
+
+}
+.text cite {
+    text-align: right;
+    color: white;
+    text-decoration: none;
+    
+
+}
+.text cite:hover {
+    color: cyan;
+}
+.link {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+   
+    
+}
+.link:hover {
+    color: cyan;
+    font-size: 20px;
+    text-shadow:2px  #33ffff;
+    
+    
+
+}
+.movie2 {
+    text-align: center;
+    margin-top: 10px;
+}
+.wn {
+    color: black;
+    margin-top: 30px;
+    
+}
+.wn:hover {
+    color:black;
+}
+ .backhome .llog {
+    
+    font-size: 40px;
+    margin-top: 250px;
+    margin-left: 100px;
+    animation: leftToright 1s ;
+    color: white;
+
+    
+}
+.backhome:hover .llog{
+    animation: moveToLeft 2s ease-in-out infinite;
+            animation-delay: 100ms;
+            
+            
+            
+
+           
+               transition: transform 1s;
+           
+}
+
+@keyframes moveToLeft {
+    0% {
+        color: #e91e63;
+    }
+    10% {
+        color: green;
+    }
+    20% {
+        color: blue;
+    }
+    30% {
+        color: wheat;
+    }
+    40% {
+        color: aqua;
+    }
+    50% {
+        color: brown;
+    }
+    60% {
+        color: chocolate;
+    }
+    70% {
+        color: #e91e63;
+    }
+    80% {
+        color: darkcyan;
+    }
+    90% {
+        color: forestgreen;
+    }
+    100% {
+        color: #e91e63;
+    }
+}
+.text {
+    border-radius: 6px;
+    border-color: #313233;
+    background-color: #313233;
+    border-width: 150px;
+    width: 150px;
+    text-align: center;
+    height: 70px;
+    padding-top: 10px;
+}
+.movie1 {
+    border-color: #313233;
+}
+.copy {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+        </style>
+        <meta name="viewport" charset="utf-8" content="width-device-width , initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            
+        </script>
+        <div class="backhome">
+        <nav>
+            <div class="logo">365 Entertainment</div>
+            <ul>
+                <li><a href="#">home</a></li>
+                <li>
+                    <a href="#">show</a>
+                    <ul>
+                        <li><a href="#" class="aa">Most-Watched</a></li>
+                        <li><a href="#"class="aa">test-Web-Series</a></li>
+                        <li><a href="#"class="aa">Talk-Shows</a></li>
+                        <li><a href="#"class="aa">More</a></li>
+                        
+
+                    </ul>
+                </li>
+
+                <li><a href="#">movies</a></li>
+                <li>
+                    <a href="#">genres</a>
+                    <ul>
+                        <li><a href="#" class="aa">kids</a></li>
+                        <li><a href="#" class="aa">Action</a></li>
+                        <li><a href="#" class="aa">Drama</a></li>
+                        <li><a href="#" class="aa">Sci-fri</a></li>
+                        <li><a href="#" class="aa">thriller</a></li>
+                        <li><a href="#" class="aa">comedy
+                            <samp class="fa fa-plus"></samp>
+                        </a></li>
+
+
+                        
+                    </ul>
+                
+                </li>
+            </ul>
+        </nav>
+        <div class="boxsearch">
+            <div class="searchbar">
+                <input type="text" class="search" placeholder="what are you looking for">
+                <button type="submit" class="searchbtn"> <i class="fa fa-search" aria-hidden="true"></i></button>
+                
+            </div>
+        </div>
+        
+        <div class="llog">360 𝕰𝖓𝖙𝖊𝖗𝖙𝖆𝖎𝖓𝖒𝖊𝖓𝖙</div>  
+    </div>
+        <hr>
+        <div class="movies">
+            <div class="trainding">Trending Movies</div>
+            <div class="allimgsec">
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="secondimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie1"><div class="img"><a href="#"><img class="img1" src="thirdimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite> </div></a></div>
+            <div class="movie2"> <a  class="link" href="#">click here <br>for more comedy movies</a><br>we have 200+ movies<br>watch now<br>.....<br>Trending Movies</div>
+            
+            </div>
+        </div>
+        <hr>
+        <div class="movies">
+            <div class="trainding">sci-fri</div>
+            <div class="allimgsec">
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie2"> <a  class="link" href="#">click here <br>for more comedy movies</a><br>we have 200+ movies<br>watch now<br>.....<br>Trending Movies</div>
+
+            
+            </div>
+        </div>
+        <hr>
+        <div class="movies">
+            <div class="trainding">Love Stories</div>
+            <div class="allimgsec">
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie1"><div class="img"><a href="#"><img class="img1 "src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie2"> <a  class="link" href="#">click here <br>for more comedy movies</a><br>we have 200+ movies<br>watch now<br>.....<br>Trending Movies</div>
+
+            
+            </div>
+        </div>
+        <hr>
+        <div class="movies">
+            <div class="trainding">Shows</div>
+            <div class="allimgsec">
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie2"> <a  class="link" href="#">click here <br>for more comedy movies</a><br>we have 200+ movies<br>watch now<br>.....<br>Trending Movies</div>
+
+           
+            </div>
+        </div>
+        <hr>
+        <div class="movies">
+            <div class="trainding">Comedy</div>
+            <div class="allimgsec">
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+             <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie1"><div class="img"><a href="#"><img class="img1" src="firstimg.webp"></div><div class="text"><cite>movie name</cite><br><cite class="wn">watch now</cite></div></a></div>
+            <div class="movie2"> <a  class="link" href="#">click here <br>for more comedy movies</a><br>we have 200+ movies<br>watch now<br>.....<br>Trending Movies</div>
+
+            
+            </div>
+        </div>
+
+        
+        
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>known</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">trainding</a></li>
+                            <li><a href="#">trailer</a></li>
+                            <li><a href="#">songs</a></li>
+                            <li><a href="#">watched status</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Movies</h4>
+                        <ul>
+                            <li><a href="#">Drama</a></li>
+                            <li><a href="#">Sci-fri</a></li>
+                            <li><a href="#">Comedy</a></li>
+                            <li><a href="#">emotional</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Join us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class=" fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copy"><i class="fa fa-copyright" aria-hidden="true">CopyRight - Pinterest</i></div>
+       </footer>
+     
+
+        
+
+    </body>
+</html>
